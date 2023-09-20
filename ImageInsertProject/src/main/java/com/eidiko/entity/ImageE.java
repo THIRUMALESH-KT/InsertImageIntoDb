@@ -17,17 +17,13 @@ public class ImageE {
 	private Long Id;
 	
 	private String name;
-   
+   @Lob
 	private Blob image;
 public ImageE() {
 	super();
 	// TODO Auto-generated constructor stub
 }
-public ImageE( String name, Blob image) {
-	super();
-	this.name = name;
-	this.image = image;
-}
+
 public Long getId() {
 	return Id;
 }
@@ -43,8 +39,8 @@ public void setName(String name) {
 public Blob getImage() {
 	return image;
 }
-public void setImage(Blob image) {
-	this.image = image;
+public void setImage(Blob bs) {
+	this.image = bs;
 }
    
    
